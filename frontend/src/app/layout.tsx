@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import "./preflight.css";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -34,9 +35,8 @@ export default function RootLayout({
   );
 }
 
-export const metadata: Metadata = {
-  title: {
-    default: "BizFlow",
-    template: "%s | BizFlow",
+export const metadata = {
+  icons: {
+    icon: "/icon.png",
   },
 };

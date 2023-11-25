@@ -10,5 +10,8 @@ export default function TestIntegration() {
 }
 
 export const metadata: Metadata = {
-  title: "Test Integration",
+  title: "App Integration",
+  icons: {
+    icon: "/icon.png",
+  },
 };
