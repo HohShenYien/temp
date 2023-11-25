@@ -107,15 +107,16 @@ const Product = () => {
               Butter Croissant
             </h1>
             <div className="mt-4 text-gray-600">
-              Savor the blissful simplicity of Makan Mesra's Butter Croissant—an
-              authentic Malaysian delight that perfectly balances flaky layers
-              with a heavenly buttery taste. Baked to golden perfection, each
-              bite is a celebration of local craftsmanship and a delightful
-              blend of crispiness and melt-in-your-mouth goodness. Whether it's
-              for breakfast or an anytime treat, our Butter Croissant promises
-              to transport you to a world of flavor, where every moment is a
-              taste of Malaysia's finest. Experience the joy of Makan Mesra's
-              Butter Croissant—a true Malaysian indulgence.
+              Savor the blissful simplicity of Makan Mesra&apos;s Butter
+              Croissant—an authentic Malaysian delight that perfectly balances
+              flaky layers with a heavenly buttery taste. Baked to golden
+              perfection, each bite is a celebration of local craftsmanship and
+              a delightful blend of crispiness and melt-in-your-mouth goodness.
+              Whether it&apos;s for breakfast or an anytime treat, our Butter
+              Croissant promises to transport you to a world of flavor, where
+              every moment is a taste of Malaysia&apos;s finest. Experience the
+              joy of Makan Mesra&apos;s Butter Croissant—a true Malaysian
+              indulgence.
             </div>
             <div className="mt-6 text-3xl text-black">RM 3.90</div>
             <Button color="cyan" className="mt-6 uppercase" size="lg">
