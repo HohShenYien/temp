@@ -4,12 +4,34 @@ import Link from "next/link";
 import { BsChevronDown } from "react-icons/bs";
 import { TiHome } from "react-icons/ti";
 import style from "./mesra.module.css";
-import { Button } from "@mantine/core";
+import { Button, clsx } from "@mantine/core";
 import { BsTreeFill, BsTree } from "react-icons/bs";
+
+const sides = [
+  "bg-[#8617CA]",
+  "bg-[#20419A]",
+  "bg-[#53C1BA]",
+  "bg-[#858585]",
+  "bg-[#BFD730]",
+  "bg-[#20939A]",
+  "bg-[#1BBCF5]",
+];
 
 const Product = () => {
   return (
-    <div className="">
+    <div className="relative">
+      <div className="absolute right-0 top-[50%] z-10 translate-y-[-50%]">
+        {sides.map((color, idx) => (
+          <div key={idx} className={clsx(color, "px-3 py-[6px]")}>
+            <Image
+              src={`/test${idx + 1}.svg`}
+              alt="temp"
+              width="40"
+              height="40"
+            />
+          </div>
+        ))}
+      </div>
       <div className="z-10 flex items-center bg-[#7CCBB8] px-6 py-5">
         <Link href="./">
           <div className="flex items-center">
@@ -121,7 +143,9 @@ const Product = () => {
                 </div>
                 <div className="mt-2 text-black">
                   <b>470</b> g of CO<sub>2</sub> emitted during production.{" "}
-                  <span className="text-blue-400 underline">Learn More</span>
+                  <span className="cursor-pointer text-blue-400 underline">
+                    Learn More
+                  </span>
                 </div>
               </div>
             </div>
