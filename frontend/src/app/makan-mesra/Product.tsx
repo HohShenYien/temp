@@ -20,7 +20,7 @@ const sides = [
 const Product = () => {
   return (
     <div className="relative">
-      <div className="absolute right-0 top-[50%] z-10 translate-y-[-50%]">
+      <div className="fixed right-0 top-[50%] z-10 translate-y-[-50%]">
         {sides.map((color, idx) => (
           <div key={idx} className={clsx(color, "px-3 py-[6px]")}>
             <Image
@@ -38,7 +38,7 @@ const Product = () => {
             <Image
               src="/petronas-normal.svg"
               alt="logo"
-              className="mr-8"
+              className="mr-8 object-cover"
               width={150}
               height={60}
             />
