@@ -20,7 +20,7 @@ const sides = [
 const Product = () => {
   return (
     <div className="relative">
-      <div className="absolute right-0 top-[50%] z-10 translate-y-[-50%]">
+      <div className="fixed right-0 top-[50%] z-10 translate-y-[-50%]">
         {sides.map((color, idx) => (
           <div key={idx} className={clsx(color, "px-3 py-[6px]")}>
             <Image
@@ -38,7 +38,7 @@ const Product = () => {
             <Image
               src="/petronas-normal.svg"
               alt="logo"
-              className="mr-8"
+              className="mr-8 object-cover"
               width={150}
               height={60}
             />
@@ -122,28 +122,40 @@ const Product = () => {
             <Button color="cyan" className="mt-6 uppercase" size="lg">
               Get it now
             </Button>
-            <div className="mt-6 flex space-x-2 bg-white px-4 py-2">
-              <Image
-                src="/gero.png"
-                alt="Gero"
-                width="120"
-                height="80"
-                className=""
-              />
-              <div className="flex flex-col justify-between">
-                <div className="flex text-[#01A14B]">
-                  <BsTreeFill />
-                  <BsTreeFill />
-                  <BsTreeFill />
-                  <BsTree />
-                  <BsTree />
+            <div className="mt-6 space-x-2 bg-white px-4 py-2">
+              <div className="flex">
+                <Image
+                  src="/screenshot3.png"
+                  alt="Gero"
+                  width="180"
+                  height="80"
+                  className="object-contain"
+                />
+                <div>
+                  <div className="text-sm text-[#01A14B]">
+                    This product emits 30g of CO<sub>2</sub> lesser than similar
+                    products.
+                  </div>
+                  <Image
+                    src="/screenshot.png"
+                    alt="Gero"
+                    width="480"
+                    height="80"
+                    className=""
+                  />
                 </div>
-                <div className="text-sm text-[#01A14B]">
-                  This product emits 30g of CO<sub>2</sub> lesser than similar
-                  products.
-                </div>
-                <div className="mt-2 text-black">
-                  <b>470</b> g of CO<sub>2</sub> emitted during production.{" "}
+              </div>
+              <div className="flex">
+                <Image
+                  src="/screenshot2.png"
+                  alt="Gero"
+                  width="160"
+                  height="80"
+                  className="mr-5 object-contain"
+                />
+                <div className="text-[#01A14B]">
+                  comparable to the carbon footprint a <b>5 minute</b> hot
+                  shower.{" "}
                   <span className="cursor-pointer text-blue-400 underline">
                     Learn More
                   </span>
